@@ -80,5 +80,7 @@ This paper has generally shown the practical application of automated forecastin
 
 1. Hyndman and Athanasopoulos (2014), Forecasting: principles and practice, OTexts.
 2. Forecast Package (http://cran.r-project.org/web/packages/forecast/index.html)
+3. My github at https://github.com/bohoro/UnivariateForecastingWithTimeseries
+
 
 
