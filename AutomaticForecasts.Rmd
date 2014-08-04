@@ -46,7 +46,7 @@ uselecTrain <- window(usmelec, 1973, 2009)
 uselecTest <- window(usmelec, 2009, 2010)
 ```
 
-We now will invoke the fully automated forecast method that will fit the best automated forecast to the data.  We will also tell the forecast model to forecast or predict the next 12 periods (2010).  
+We now will invoke the fully automated forecast method that will fit the best automated forecast to the data out of 30 possible forecast models.  We will also tell the forecast model to forecast or predict the next 12 periods (2010).  
 
 ```{r}
 # fully automated forecasting
@@ -54,7 +54,7 @@ fcast <- forecast(uselecTrain, h=12)
 sprintf("The method selected for the data is: %s", fcast$method)
 ```
 
-We see from the model printed above, the forecast method has selected an Exponential Smoothing State Space model with error type of *multiplicative*, trend type of *none*, and seasonal type of *multiplicative*.  This matches our original intuition of a trend that has leveled off with a seasonal component. 
+We see from the model printed above, the forecast method has selected an Exponential Smoothing State Space model with error type of *multiplicative*, trend type of *none*, and seasonal type of *multiplicative*.  This matches our original intuition of a trend (none) that has leveled off with a seasonal component (multiplicative). 
 
 Now let's see a plot of the forecast.  The blue line is the point forecast (mean of forecast) with the gray areas indicating the confidence intervals.  We can see that the forecast appears to have done a reasonable job in the forecast.  Specifically, it appears to have extrapolated the visual pattern for the observed data.
 
