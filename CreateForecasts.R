@@ -21,8 +21,9 @@ fcast <- forecast(uselecTrain, h=12)
 sprintf("The method selected for the data is: %s", fcast$method)
 
 plot(fcast, ylab="Net Generation Measured in Billions of Kilowatt Hours (kWh)", xlab="Year", main="Electricity Monthly Total Net Generation")
+grid()
 
-plot(fcast, ylab="Net Generation Measured in Billions of Kilowatt Hours (kWh)", xlab="Year", main="Electricity Monthly Total Net Generation"))
+plot(fcast, ylab="Net Generation Measured in Billions of Kilowatt Hours (kWh)", xlab="Year", main="Electricity Monthly Total Net Generation")
 # now plot the actual values to compare to the forecast
 lines(uselecTest, col="red", lwd=1.5)
 grid()
