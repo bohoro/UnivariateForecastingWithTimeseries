@@ -12,4 +12,4 @@ For illustration of forecasting we will be using the dataset “Electricity mont
 
 Two questions we will be looking to answer with this dataset.  One, is there a seasonal component to monthly electric net generation?  Two, can we forecast future unobserved data points?
 
-See http://rpubs.com/bohoro/AutomaticForecasts for the published article.
+See [Automatic Forecasting via R](http://rpubs.com/bohoro/AutomaticForecasts) for the published article.
